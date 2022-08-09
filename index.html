@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Decimal em Binário </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <!-- <div class="wrap-container"> -->
+            <div class="container box">
+        
+                <header>
+                    <h1>Convertor</h1><br><br>
+                    <span>
+                    <select id="inputType">
+                        <option value="decimal">Decimal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                        <option value="octal">Octal</option> 
+                         <option value="binary">Binary</option>
+                    </select>
+                
+                    <span onclick="swap()" class="onclick">  &#8644; </span>
+                    <select id="resultType">
+                        <option value="binary">Binary</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                        <option value="octal">Octal</option>
+                    </select>
+
+                </span>
+            </header>
+                <br><br>
+                
+                <span>
+                <input type="text" id="input" placeholder="input">
+                <span class="equal"> = </span>
+                <input type="text" id="result" placeholder="result" disabled />
+                <br><br>
+                </span>
+                <br>
+        
+                <span>
+                    <button onclick="swap()">&#8644; Swap </button>
+                    <button onclick="refresh(this)" value="Refresh"><i class="fa fa-refresh"></i> Refresh</button>
+                </span>
+                
+
+           
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
