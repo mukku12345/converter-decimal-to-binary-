@@ -1,0 +1,229 @@
+*::before, *, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body{
+    background-color: rgb(99, 100, 104);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 500px;
+    width: 690px;
+
+    margin-left: 5px;
+
+    padding: 30px;
+}
+
+
+.box{
+    background-color: rgb(228, 227, 183);
+    box-shadow: 15px 0 15px rgba(0, 0, 0, 0.357);
+    border-radius: 6px;
+
+    position: relative;
+
+    font-family: 'Fira Code', monospace;
+}
+
+
+.container header{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+
+    color: rgb(184, 77, 112);
+
+    
+    position: relative;
+
+    font-size: 15px;
+}
+
+
+
+
+.container input{
+    background: rgb(252, 252, 252);
+    border: 1px solid;
+    border-radius: 4px;
+
+    text-align: center;
+
+    padding: 9px 13px 9px 13px;
+    outline: none;
+
+    width: 251px;
+    font-size: large;
+
+    color: rgba(37, 39, 41, 0.686);
+}
+
+
+
+.container button{
+    margin-top: 30px;
+    padding: 12px 35px 12px 35px;
+    width: 170px;
+    
+        background-color:rgb(93, 86, 180);
+    /* background-color: rgba(72, 70, 68, 0); */
+    border: 1px solid rgb(184, 77, 112);
+    /* box-shadow: 0 0 19px rgba(184, 77, 113, 0.247); */
+    color: rgb(255, 255, 255);
+
+    font-family: 'Fira Code', monospace;
+
+    cursor: pointer;
+    font-size: large;
+
+    border-radius: 4px;
+}
+.container button:active{
+ background-color: rgb(168, 115, 61);
+ color: whitesmoke;
+ border: 1px saddlebrown;
+ /* transition: 1s ease-in-out; */
+ border-radius: 4px;
+}
+
+
+#inputType  {
+    /* height: 36px; */
+    width: 250px; 
+    padding: 9px 14px 9px 14px;
+    font-size: large;
+    background: rgb(252, 252, 252);
+    color: rgba(37, 39, 41, 0.686);
+    
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid;
+
+}
+
+#resultType {
+     /* height: 36px; */
+     width: 250px; 
+    padding: 9px 14px 9px 14px;
+    font-size: large;
+    background: rgb(252, 252, 252);
+    color: rgba(37, 39, 41, 0.686);
+
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid;
+    
+}
+
+
+
+.onclick{
+    color:rgb(184, 77, 112);
+    cursor: pointer;
+}
+.onclick:active{
+    color: blue;
+}
+.equal{
+    color:rgba(240, 248, 255, 0.686) ;
+}
+
+
+@media only screen and (max-width: 768px) {
+   .box{
+    height:inherit;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    
+   }
+   #inputType{ 
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    position: relative;
+    padding: 12px 35px 12px 35px; 
+     width: 250px; 
+
+    
+
+   }
+   #resultType{
+
+    
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    position: relative;
+    padding: 12px 35px 12px 35px;
+    width: 250px;
+
+   }
+   #input{ padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    position: relative;
+    margin-top: 20px;
+    padding: 12px 35px 12px 35px;
+    width: 250px;
+    
+
+   }
+   #result{ 
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    position: relative;
+    padding: 12px 35px 12px 35px;
+    width: 250px;
+    
+
+   }
+   option{
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+   
+
+   }
+
+    span{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        
+    }
+    .equal{
+        text-align: center;
+    }
+}
