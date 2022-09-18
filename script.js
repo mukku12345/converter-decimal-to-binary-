@@ -1,36 +1,3 @@
-// function dec(deci){
-//     var binary = document.getElementById('binary')
-//     var decimal = document.getElementById('decimal').value
-
-//     const binary = []
-
-//     if (decimal == 0){
-//         binary.value = ''
-//     }
-
-//     else{
-//         while(Math.floor(deci/2) >= 1){ 
-//             if(Math.floor(deci%2 == 0)){
-//                 binario.push(0)
-//             }
-//             else if(Math.floor(deci%2 == 1)){
-//                 binario.push(1)
-//             }
-//             deci = Math.floor(deci/2)
-//         }
-
-//         binario.push(1)
-//         binario.reverse()
-    
-//         saida.value = binario.join('')
-//     }
-// }
-// document.querySelector('.arrow').addEventListener('click', function(){
-//     document.querySelector('.menu').classList.toggle('active')
-//     document.querySelector('.arrow').classList.toggle('active')
-// })
-
-
 var  input =document.getElementById("input");
 var result =document.getElementById('result');
 var inputType =document.getElementById('inputType');
